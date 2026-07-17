@@ -1,0 +1,59 @@
+/* 
+    Global CSS Variables
+
+    Purpose:
+    - Store reusable design tokens used throughout the project.
+    - Define colors, typography, spacing, shadows, border radius,
+    transitions, and other global values.
+    - Makes changing the visual theme simple and maintainable.
+*/
+
+:root {
+    /* Colors */
+    --color-primary: #2563eb;
+    --color-primary-dark: #1d4ed8;
+    --color-primary-light: #dbeafe;
+
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #64748b;
+    --color-border: #e2e8f0;
+
+    /* Typography */
+    --font-primary: "Inter", Arial, sans-serif;
+
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 5rem;
+
+    /* Layout */
+    --container-width: 1200px;
+
+    /* Border radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+    --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.1);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
