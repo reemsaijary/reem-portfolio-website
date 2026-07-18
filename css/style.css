@@ -5,3 +5,168 @@
     - Each section should remain organized and grouped
     for easier maintenance.
 */
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 4.5rem);
+    padding-block: var(--space-2xl);
+    overflow: hidden;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+    align-items: center;
+    gap: var(--space-3xl);
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.hero-greeting {
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
+    font-size: var(--font-size-base);
+    font-weight: 700;
+}
+
+.hero-title {
+    margin-bottom: var(--space-xs);
+    font-size: clamp(3rem, 5.2vw, 4.7rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+}
+
+.hero-role {
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-secondary);
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.hero-description {
+    max-width: 590px;
+    margin-bottom: var(--space-xl);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+    line-height: 1.65;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.hero-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+
+    color: var(--color-text-secondary);
+
+    font-size: .95rem;
+    font-weight: 600;
+
+    transition: .25s;
+}
+
+.hero-social-link i {
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+
+    transition: .25s;
+}
+
+.hero-social-link:hover {
+    color: var(--color-primary);
+}
+
+.hero-social-link:hover i {
+    color: var(--color-primary);
+}
+
+/* Image area */
+
+.hero-image-wrapper {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 410px;
+    height: 410px;
+    margin-inline: auto;
+    isolation: isolate;
+}
+
+.hero-image-background {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(219, 234, 254, 0.95),
+            rgba(37, 99, 235, 0.08)
+        );
+    transform: translate(18px, -12px);
+}
+
+.hero-image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center 22%;
+    border: 6px solid var(--color-surface);
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+    
+}
+
+/* Decorative dot grid */
+
+.hero-dots {
+    position: absolute;
+    top: 18%;
+    left: -4%;
+    z-index: -1;
+    width: 88px;
+    height: 64px;
+    opacity: 0.45;
+    background-image: radial-gradient(
+        circle,
+        var(--color-primary) 2px,
+        transparent 2px
+    );
+    background-size: 16px 16px;
+}
+
+/* Small outlined decorative circles */
+
+.hero-decoration {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+}
+
+.hero-decoration-top {
+    top: 11%;
+    right: 2%;
+}
+
+.hero-decoration-bottom {
+    bottom: 14%;
+    left: -1%;
+    width: 9px;
+    height: 9px;
+    opacity: 0.75;
+}
