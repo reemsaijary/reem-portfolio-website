@@ -9,17 +9,25 @@
 */
 
 :root {
-    /* Colors */
-    --color-primary: #2563eb;
-    --color-primary-dark: #1d4ed8;
-    --color-primary-light: #dbeafe;
+     /* Background colors */
+    --color-background: #020817;
+    --color-background-secondary: #07142b;
+    --color-surface: rgba(8, 22, 48, 0.72);
+    --color-surface-solid: #0a1934;
 
-    --color-background: #f8fafc;
-    --color-surface: #ffffff;
+    /* Text colors */
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #b6c2d9;
+    --color-text-muted: #8391aa;
 
-    --color-text-primary: #0f172a;
-    --color-text-secondary: #64748b;
-    --color-border: #e2e8f0;
+    /* Brand colors */
+    --color-primary: #3b82f6;
+    --color-primary-hover: #60a5fa;
+    --color-primary-light: rgba(59, 130, 246, 0.18);
+
+    /* Borders */
+    --color-border: rgba(148, 163, 184, 0.2);
+    --color-border-hover: rgba(96, 165, 250, 0.55);
 
     /* Typography */
     --font-primary: "Inter", Arial, sans-serif;
@@ -50,8 +58,9 @@
     --radius-lg: 1rem;
 
     /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
-    --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.1);
+    --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.22);
+    --shadow-md: 0 18px 45px rgba(0, 0, 0, 0.35);
+    --shadow-glow: 0 0 35px rgba(59, 130, 246, 0.2);
 
     /* Transitions */
     --transition-fast: 0.2s ease;

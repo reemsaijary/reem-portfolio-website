@@ -22,11 +22,25 @@ html {
 
 body {
     min-height: 100vh;
-    font-family: var(--font-primary);
-    font-size: var(--font-size-base);
-    line-height: 1.6;
+    overflow-x: hidden;
+
     color: var(--color-text-primary);
     background-color: var(--color-background);
+
+    background-image:
+        linear-gradient(
+            rgba(2, 8, 23, 0.68),
+            rgba(2, 8, 23, 0.82)
+        ),
+        url("../assets/images/background/space-background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: var(--font-family-primary);
+    line-height: 1.6;
 }
 
 img,

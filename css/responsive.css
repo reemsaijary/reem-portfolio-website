@@ -141,3 +141,31 @@
         font-size: 0.8rem;
     }
 }
+
+@media (hover: none) {
+    .hero-image-wrapper::before {
+        display: none;
+    }
+
+    .hero-image-wrapper:hover .hero-image {
+        transform: none;
+    }
+
+    .image-sparkle {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-image-wrapper::before,
+    .image-sparkle i {
+        animation: none;
+    }
+
+    .hero-image,
+    .hero-image-wrapper::before,
+    .hero-image-wrapper::after,
+    .image-sparkle {
+        transition: none;
+    }
+}
