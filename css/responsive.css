@@ -470,3 +470,77 @@
     }
 }
 
+/* 
+   Education & Certifications
+ */
+
+@media (max-width: 900px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-card-featured {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .certificates-header {
+        margin-bottom: 2rem;
+    }
+
+    .certificate-card,
+    .certificate-card-featured {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+
+    .certificate-card-featured .certificate-icon {
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+        font-size: 1.4rem;
+    }
+
+    .certificate-card-featured .certificate-title {
+        font-size: 1.35rem;
+    }
+
+    .certificate-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.7rem;
+    }
+
+    .certificate-actions {
+        width: 100%;
+    }
+
+    .certificate-actions .button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .certificate-modal {
+        padding: 0.75rem;
+    }
+
+    .certificate-modal-content {
+        max-height: calc(100vh - 1.5rem);
+        border-radius: 14px;
+    }
+
+    .certificate-modal-header {
+        padding: 0.85rem 1rem;
+    }
+
+    .certificate-modal-image-wrapper {
+        max-height: calc(100vh - 7rem);
+        padding: 0.65rem;
+    }
+
+    .certificate-modal-image-wrapper img {
+        max-height: calc(100vh - 8.5rem);
+    }
+}
