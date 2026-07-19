@@ -16,6 +16,7 @@
 
 .section {
     padding-block: var(--space-3xl);
+    scroll-margin-top: 5rem;
 }
 
 .section-header {
