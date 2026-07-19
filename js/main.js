@@ -34,3 +34,14 @@ if (navbarToggle && navbarMenu) {
         });
     });
 }
+
+const siteHeader = document.querySelector(".site-header");
+
+function updateHeaderOnScroll() {
+    if (!siteHeader) return;
+
+    siteHeader.classList.toggle("is-scrolled", window.scrollY > 20);
+}
+
+updateHeaderOnScroll();
+window.addEventListener("scroll", updateHeaderOnScroll);
