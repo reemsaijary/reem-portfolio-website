@@ -395,3 +395,78 @@
         aspect-ratio: 1 / 1;
     }
 }
+
+/* 
+   EXPERIENCE RESPONSIVE
+ */
+
+@media (max-width: 768px) {
+    .experience-header {
+        margin-bottom: 3rem;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
+    }
+
+    .experience-top {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .experience-meta {
+        justify-content: flex-start;
+    }
+
+    .experience-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+    }
+
+    .experience-company {
+        align-items: flex-start;
+    }
+
+    .experience-icon {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+
+    .experience-company h3 {
+        font-size: 1.35rem;
+    }
+
+    .experience-position {
+        font-size: 0.92rem;
+    }
+
+    .experience-meta {
+        width: 100%;
+    }
+
+    .experience-meta span {
+        flex: 1;
+        justify-content: center;
+        min-width: 8rem;
+    }
+
+    .experience-description {
+        font-size: 0.95rem;
+    }
+
+    .experience-actions {
+        flex-direction: column;
+    }
+
+    .experience-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
