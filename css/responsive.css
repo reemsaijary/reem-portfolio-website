@@ -276,3 +276,122 @@
         transform: translateY(-4px);
     }
 }
+
+/* 
+   
+   Projects Responsive Design
+   
+*/
+
+@media (max-width: 1050px) {
+    .project-card-featured {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card-featured .project-image-wrapper {
+        min-height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 900px) {
+    .projects {
+        padding-block: var(--space-3xl);
+    }
+
+    .projects-header {
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card-featured {
+        grid-column: auto;
+    }
+
+    .project-heading {
+        flex-direction: column;
+    }
+
+    .project-status {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        padding-block: var(--space-2xl);
+    }
+
+    .projects-grid {
+        gap: var(--space-lg);
+    }
+
+    .project-content,
+    .project-card-featured .project-content {
+        padding: 1.35rem;
+    }
+
+    .project-image-wrapper,
+    .project-card-featured .project-image-wrapper {
+        aspect-ratio: 4 / 3;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .project-features li {
+        font-size: 0.86rem;
+    }
+
+    .project-technologies {
+        gap: 0.5rem;
+    }
+
+    .project-technologies span {
+        padding: 0.45rem 0.65rem;
+        font-size: 0.7rem;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+
+    .project-actions .button {
+        width: 100%;
+    }
+
+    .project-badge {
+        top: 0.75rem;
+        left: 0.75rem;
+
+        padding: 0.48rem 0.7rem;
+
+        font-size: 0.68rem;
+    }
+
+    .project-card:hover {
+        transform: translateY(-4px);
+    }
+}
+
+@media (max-width: 400px) {
+    .project-content,
+    .project-card-featured .project-content {
+        padding: 1.15rem;
+    }
+
+    .project-image-wrapper,
+    .project-card-featured .project-image-wrapper {
+        aspect-ratio: 1 / 1;
+    }
+}
