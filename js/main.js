@@ -129,3 +129,13 @@ document.addEventListener("keydown", (event) => {
         closeCertificateModal();
     }
 });
+
+/* 
+   Dynamic Footer Year
+ */
+
+const currentYearElement = document.getElementById("current-year");
+
+if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+}

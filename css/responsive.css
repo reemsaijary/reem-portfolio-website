@@ -544,3 +544,90 @@
         max-height: calc(100vh - 8.5rem);
     }
 }
+
+/* 
+   Contact
+ */
+
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .contact-header {
+        margin-bottom: 2rem;
+    }
+
+    .contact-intro {
+        padding: 1.5rem;
+    }
+
+    .contact-icon-large {
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+        font-size: 1.35rem;
+    }
+
+    .contact-intro h3 {
+        font-size: 1.55rem;
+    }
+
+    .contact-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-actions .button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-detail-card {
+        align-items: flex-start;
+        padding: 1.1rem;
+    }
+
+    .contact-detail-arrow {
+        margin-top: 0.35rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-status-dot {
+        animation: none;
+    }
+}
+
+/* 
+   Footer
+ */
+
+@media (max-width: 800px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-main {
+        max-width: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .site-footer {
+        padding-top: 3rem;
+    }
+
+    .footer-navigation {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
