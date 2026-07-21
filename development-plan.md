@@ -2,9 +2,9 @@
 
 ## 1. Project Overview
 
-A modern, responsive, and maintainable personal portfolio website that presents my software development projects, technical skills, education, experience, and certificates.
+A modern, responsive, and maintainable personal portfolio website designed to present my software development projects, technical skills, education, professional experience, and certifications.
 
-This portfolio will be updated over time as I complete new projects, gain experience, and develop new skills.
+The portfolio serves as my professional online presence and will continue to evolve as I complete new projects, strengthen my technical skills, and gain additional experience.
 
 ---
 
@@ -14,9 +14,10 @@ This portfolio will be updated over time as I complete new projects, gain experi
 - Showcase my strongest software development projects.
 - Present my technical skills clearly.
 - Highlight my education, training, and internship experience.
-- Provide easy access to my GitHub, LinkedIn, CV, and contact information.
-- Create a structure that is easy to update and maintain.
-- Ensure the website works well on desktop, tablet, and mobile devices.
+- Provide direct access to my GitHub, LinkedIn, CV, and email.
+- Create a website that is easy to update and maintain.
+- Ensure the website works correctly on desktop, tablet, and mobile devices.
+- Apply semantic HTML, reusable CSS, accessibility practices, and clean code organization.
 
 ---
 
@@ -31,111 +32,148 @@ This portfolio will be updated over time as I complete new projects, gain experi
 
 ---
 
-## 4. Technologies
+## 4. Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
+- Font Awesome
 - Git
 - GitHub
-- GitHub Pages
-
-Additional tools or libraries may be added later only when they provide clear value to the project.
+- Visual Studio Code
+- GitHub Pages or another static hosting platform
 
 ---
 
-## 5. Design Direction
+## 5. Final Design Direction
 
-The portfolio should have a clean, modern, professional, and welcoming appearance.
+The final portfolio uses a dark, modern, space-inspired visual theme.
 
-### Initial Design Preferences
+### Design Characteristics
 
-- Light theme
+- Dark navy and blue color palette
+- Starry background
+- Glassmorphism-style cards
+- Blue gradient accents
 - Clear visual hierarchy
-- Comfortable spacing
-- Simple and professional typography
-- Minimal and purposeful animations
-- Consistent buttons, cards, and section layouts
+- Responsive layouts
+- Professional typography
+- Consistent buttons and card components
+- Subtle hover effects and glow effects
 - Recruiter-friendly content presentation
+- Minimal motion that does not distract from the content
 
-The color palette, typography, spacing, and other visual details may change during development as the design is tested and refined.
-
-All reusable design values will be stored as CSS custom properties inside `variables.css` so the visual theme can be changed easily later.
-
----
-
-## 6. Planned Website Sections
-
--  Navigation Bar
--  Hero Section
--  About Me
--  Technical Skills
--  Featured Projects
--  Experience
--  Education
--  Training and Certificates
--  Contact Section
--  Footer
+Reusable design values are stored as CSS custom properties inside `variables.css`.
 
 ---
 
-## 7. Planned Features
+## 6. Website Sections
+
+- Navigation Bar
+- Hero Section
+- About Me
+- Skills and Technologies
+- Featured Projects
+- Professional Experience
+- Education and Certifications
+- Contact Section
+- Footer
+- Certificate Preview Modal
+
+---
+
+## 7. Implemented Features
 
 - Responsive navigation menu
+- Sticky navigation header
 - Smooth scrolling between sections
 - Professional introduction and developer title
 - Downloadable CV
-- GitHub and LinkedIn links
-- Dynamically generated project cards
-- Dynamically generated skills
-- Dynamically generated experience entries
-- Dynamically generated certificate cards
-- GitHub repository links for projects
-- Live demo links where available
+- GitHub, LinkedIn, and email links
+- Responsive project cards
+- Responsive skill categories
+- Experience timeline and cards
+- Education and certification cards
+- Certificate preview modal
+- Keyboard support for closing the modal
+- Escape-key modal closing
+- Dynamic footer year
 - Mobile-friendly layout
-- Accessible buttons, links, headings, and images
-- Simple animations that do not affect usability
+- Visible keyboard focus styles
+- Descriptive image alternative text
+- Reduced-motion support
+- Custom portfolio favicon
+- Reusable CSS components
+- Organized CSS architecture
+- Responsive desktop, tablet, and mobile layouts
 
 ---
 
 ## 8. Content Management Approach
 
-Content that may need regular updates will be stored in `js/data.js`.
+The current portfolio content is written directly in `index.html`.
 
-This may include:
+This includes:
 
 - Projects
 - Technical skills
 - Experience
 - Education
-- Certificates
+- Certifications
+- Contact information
 
-The purpose of this approach is to make future updates easier without changing the main page structure.
+The `js/data.js` file is reserved for future use if the portfolio is later converted to dynamically render repeated content using JavaScript.
 
-Website behavior and dynamic content rendering will be handled in `js/main.js`.
+Website interactions and behavior are handled in `js/main.js`.
+
+These interactions include:
+
+- Mobile navigation behavior
+- Header styling while scrolling
+- Certificate modal controls
+- Dynamic footer year
 
 ---
 
-## 9. Project Structure
+## 9. CSS Architecture
+
+The CSS is separated by responsibility to make the project easier to maintain.
+
+- `variables.css` — colors, typography, spacing, shadows, transitions, and other design tokens
+- `reset.css` — browser reset and global base styles
+- `layout.css` — reusable containers, grids, sections, and layout utilities
+- `components.css` — buttons, navigation, cards, and reusable interface components
+- `style.css` — section-specific styles
+- `responsive.css` — media queries and responsive adjustments
+
+---
+
+## 10. Project Structure
 
 ```text
 01-Portfolio-Website/
 │
 ├── assets/
+│   ├── certificates/
+│   ├── fonts/
 │   ├── icons/
 │   ├── images/
+│   │   ├── background/
 │   │   ├── certificates/
 │   │   ├── profile/
-│   │   └── projects/
+│   │   ├── projects/
+│   │   ├── favicon.png
+│   │   └── portfolio-preview.png
 │   └── resume/
+│       └── Reem-Saijary-CV.pdf
 │
 ├── css/
 │   ├── variables.css
 │   ├── reset.css
 │   ├── layout.css
 │   ├── components.css
-│   ├── responsive.css
-│   └── style.css
+│   ├── style.css
+│   └── responsive.css
 │
 ├── js/
 │   ├── data.js
