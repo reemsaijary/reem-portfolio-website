@@ -13,9 +13,7 @@ This portfolio was developed as part of my virtual internship at Codveda Technol
 
 ## Live Demo
 
-The portfolio will be available here after deployment:
-
-[View Live Portfolio](ADD-LIVE-URL-HERE)
+[View Live Portfolio](https://reemsaijary.github.io/reem-portfolio-website/)
 
 ## Preview
 
