@@ -1,29 +1,38 @@
-# Reem Saijary — Portfolio Website
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+<h1 align="center">Reem Saijary — Portfolio Website</h1>
 
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+<p align="center">
+  A responsive personal portfolio website showcasing my projects, technical skills,
+  professional experience, education, and certifications.
+</p>
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Responsive-Yes-22c55e?style=for-the-badge" alt="Responsive Design">
+</p>
 
-![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge)
+<p align="center">
+  <a href="https://reemsaijary.github.io/reem-portfolio-website/">
+    <img src="https://img.shields.io/badge/View_Live_Portfolio-2563EB?style=for-the-badge&logo=githubpages&logoColor=white" alt="View Live Portfolio">
+  </a>
+</p>
 
-A responsive personal portfolio website created to present my projects, technical skills, professional experience, education, and certifications.
-
-This portfolio was developed as part of my virtual internship at Codveda Technologies and serves as a central place where recruiters, collaborators, and potential clients can learn more about my work as a Junior Backend Developer.
-
-## Live Demo
-
-[View Live Portfolio](https://reemsaijary.github.io/reem-portfolio-website/)
-
-## Preview
-
-![Portfolio Website Preview](assets/images/portfolio-preview.jpg)
+---
 
 ## About the Portfolio
 
-The website introduces my background as a Computer Science graduate and Junior Backend Developer with experience building practical, database-driven web applications and business systems.
+This portfolio was developed as part of my virtual internship at **Codveda Technologies** and serves as a central place where recruiters, collaborators, and potential clients can learn more about my work as a Junior Backend Developer.
 
-It highlights my work with technologies such as Python, Django, Laravel, JavaScript, MySQL, PostgreSQL, and SQLite.
+The website presents my background as a Computer Science graduate and highlights my experience building practical, database-driven web applications and business systems using technologies such as Python, Django, Laravel, JavaScript, MySQL, PostgreSQL, and SQLite.
+
+## Preview
+
+<p align="center">
+  <a href="https://reemsaijary.github.io/reem-portfolio-website/">
+    <img src="assets/images/portfolio-preview.jpg" alt="Reem Saijary Portfolio Website Preview" width="900">
+  </a>
+</p>
 
 ## Main Sections
 
@@ -192,7 +201,7 @@ Detailed progress is documented in [`development-plan.md`](development-plan.md).
 Possible future improvements include:
 
 - Adding new projects and professional experience
-- Connecting the contact form to a backend service
+- Adding a functional contact form connected to a backend or email service
 - Adding individual project case-study pages
 - Improving social-sharing metadata
 - Adding automated performance testing
