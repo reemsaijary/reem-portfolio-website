@@ -6,8 +6,6 @@
     animations, and other client-side logic.
 */
 
-console.log("Portfolio website JavaScript connected successfully.");
-
 const navbarToggle = document.querySelector(".navbar-toggle");
 const navbarMenu = document.querySelector(".navbar-menu");
 const navbarLinks = document.querySelectorAll(".navbar-link");
@@ -139,3 +137,4 @@ const currentYearElement = document.getElementById("current-year");
 if (currentYearElement) {
     currentYearElement.textContent = new Date().getFullYear();
 }
+

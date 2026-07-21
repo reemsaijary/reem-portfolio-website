@@ -39,7 +39,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    font-family: var(--font-family-primary);
+    font-family: var(--font-primary);
     line-height: 1.6;
 }
 
