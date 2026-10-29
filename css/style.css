@@ -2498,3 +2498,8 @@ a.contact-detail-card:hover .contact-detail-arrow {
     transform: translateY(-2px);
 }
 
+/* Space between experience cards when more entries are added. */
+#experience-list {
+  display: grid;
+  gap: var(--space-xl);
+}
