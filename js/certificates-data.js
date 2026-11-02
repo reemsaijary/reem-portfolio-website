@@ -60,5 +60,25 @@ const certificates = [
     previewTitle: "Anera Web Development Certificate",
     buttonLabel: "View Certificate",
     buttonIcon: "fa-solid fa-image"
-  }
+  },
+
+  {
+  type: "Internship",
+  title: "TechTalks Internship — Python Track",
+  issuer: "TechTalks",
+  description:
+    "Completed a team-based internship, contributing to Ordira, a Django platform for small online shops.",
+  icon: "fa-solid fa-briefcase",
+  featured: false,
+  details: [
+    { text: "October 2026", icon: "fa-solid fa-calendar" },
+    { text: "Remote", icon: "fa-solid fa-globe" }
+  ],
+  status: "Completed",
+  image: "assets/certificates/techtalks-internship-certificate.png",
+  previewTitle: "TechTalks Internship Certificate",
+  buttonLabel: "View Certificate",
+  buttonIcon: "fa-solid fa-image"
+}
+
 ];

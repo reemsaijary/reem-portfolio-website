@@ -105,5 +105,32 @@ const projects = [
     ],
     demoUrl: "https://hallal-snacks-project.netlify.app",
     codeUrl: "https://github.com/reemsaijary/Hallal-Snacks-Project"
-  }
+  },
+
+  {
+  title: "Ordira",
+  type: "Team Full-Stack Web Application",
+  featured: false,
+  status: "Completed",
+  image: "assets/images/projects/ordira.png",
+  imageAlt: "Ordira shop management dashboard",
+  description:
+    "A platform for small online clothing shops, combining a public product catalog and guest checkout with tools for managing inventory, customers, orders, and manual payments.",
+  features: [
+    "Public shop catalogs and guest checkout",
+    "Products, variants, and inventory management",
+    "Order tracking and customer records",
+    "Manual payments and outstanding balances"
+  ],
+  technologies: [
+    "Python",
+    "Django",
+    "PostgreSQL",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  demoUrl: "",
+  codeUrl: "https://github.com/MohammadMouhyeldeen/techtalks-ordira"
+}
 ];
