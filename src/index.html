@@ -1,0 +1,264 @@
+<!-- 
+    Portfolio Website
+    Purpose:
+    - Main HTML document for the portfolio website.
+    - Defines the semantic page structure and connects
+    all project assets, stylesheets, and scripts. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Reem Saijary's personal portfolio showcasing web development projects, technical skills, experience, and certificates."
+    >
+
+        <link
+        rel="icon"
+        type="image/png"
+        href="assets/images/favicon2.png"
+    >
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+    <title>Reem Saijary | Backend & Full-Stack Developer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+ <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container navbar-container">
+            <a href="#home" class="navbar-logo">
+                Reem<span>.</span>Saijary<span>.</span>
+            </a>
+
+            <button
+                class="navbar-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navbar-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navbar-menu" id="navbar-menu">
+                <ul class="navbar-links">
+                    <li><a href="#about" class="navbar-link">About</a></li>
+                    <li><a href="#skills" class="navbar-link">Skills</a></li>
+                    <li><a href="#projects" class="navbar-link">Projects</a></li>
+                    <li><a href="#experience" class="navbar-link">Experience</a></li>
+                    <li><a href="#certificates" class="navbar-link">Certificates</a></li>
+                    <li><a href="#contact" class="navbar-link">Contact</a></li>
+                </ul>
+
+                <a
+                    href="assets/resume/Reem-Saijary-CV.pdf"
+                    class="button button-secondary"
+                    download
+                >
+                    <i class="fa-solid fa-download"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main>
+    <!-- home -->
+       <!-- include:sections/home.html -->
+    <!-- about -->
+ <!-- include:sections/about.html -->
+    <!-- skills -->
+  <!-- include:sections/skills.html -->
+    <!-- projects -->
+        <!-- include:sections/projects.html -->
+    <!-- experience -->
+        <!-- include:sections/experience.html -->
+    <!-- Education and certifications -->
+        <!-- include:sections/certificates.html -->
+
+<!-- Certificate Modal -->
+<div
+    class="certificate-modal"
+    id="certificate-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="certificate-modal-title"
+    aria-hidden="true"
+>
+    <div
+        class="certificate-modal-overlay"
+        data-certificate-close
+    ></div>
+
+    <div class="certificate-modal-content">
+        <div class="certificate-modal-header">
+            <h3 id="certificate-modal-title">
+                Certificate
+            </h3>
+
+            <button
+                type="button"
+                class="certificate-modal-close"
+                aria-label="Close certificate preview"
+                data-certificate-close
+            >
+                <i
+                    class="fa-solid fa-xmark"
+                    aria-hidden="true"
+                ></i>
+            </button>
+        </div>
+
+        <div class="certificate-modal-image-wrapper">
+            <img
+                id="certificate-modal-image"
+                src=""
+                alt=""
+            >
+        </div>
+    </div>
+</div>
+
+<!-- Contact section -->
+        <!-- Contact -->
+<!-- include:sections/contact.html -->
+
+    </main>
+
+    <!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-container">
+
+        <div class="footer-main">
+
+            <a href="#home" class="footer-logo">
+                Reem<span>.</span>Saijary<span>.</span>
+            </a>
+
+            <p class="footer-description">
+                Backend & Full-Stack Developer building practical web applications,
+                business systems, and scalable software solutions.
+            </p>
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://github.com/reemsaijary" data-profile-link="githubUrl"
+                    class="footer-social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my GitHub profile"
+                >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/reem-saijary" data-profile-link="linkedinUrl"
+                    class="footer-social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my LinkedIn profile"
+                >
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+
+                <a
+                    href="mailto:reemsaijary31@gmail.com" data-profile-link="email"
+                    class="footer-social-link"
+                    aria-label="Send me an email"
+                >
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-navigation">
+
+            <div class="footer-links-group">
+                <h3>Navigation</h3>
+
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-group">
+                <h3>More</h3>
+
+                <ul>
+                    <li><a href="#certificates">Education</a></li>
+                    <li><a href="#certificates">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a
+                            href="assets/resume/Reem-Saijary-CV.pdf"
+                            download
+                        >
+                            Download CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+
+        <p>
+            © <span id="current-year"></span> Reem Saijary.
+            All rights reserved.
+        </p>
+
+        <a href="#home" class="footer-back-to-top">
+            Back to top
+            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </a>
+
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/projects-data.js"></script>
+    <script src="js/render-projects.js"></script>
+    <script src="js/experience-data.js"></script>
+    <script src="js/render-experience.js"></script>
+    <script src="js/skills-data.js"></script>
+    <script src="js/render-profile.js"></script>
+    <script src="js/render-skills.js"></script>
+    <script src="js/certificates-data.js"></script>
+    <script src="js/render-certificates.js"></script>
+    <script src="js/about-data.js"></script>
+    <script src="js/render-about.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
